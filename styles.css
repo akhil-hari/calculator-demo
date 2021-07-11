@@ -1,6 +1,97 @@
-*{
-margin:0px;
-padding:0px;
-box-layout:border-box
+/*
 
+#################################################
+#################################################
+####### Written by Akhil Hari         ###########
+####### https://github.com/akhil-hari ###########
+#################################################
+#################################################
+
+##
+## Css code for a demo calculator
+##
+
+*/
+
+
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+
+}
+
+body{
+	display:flex;
+}
+
+#calculator{
+	height:450px;
+	width:350px;
+	border:2px solid gray;
+	border-radius:30px;
+	background-color:rgba(31,31,31,0.90);
+	padding:30px;
+	
+}
+
+#display{
+	position:relative;
+	width:290px;
+	height:80px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:rgb(213, 248, 149);
+	border-radius:10px;
+	font-family:'Roboto Mono', monospace;
+	
+	
+}
+#display input{
+	position:absolute;
+	top:35px;
+	left:10px;
+	border:none;
+	width:90%;
+	height:35px;
+	font-size:1.5em;
+	background-color:rgb(213, 248, 149);
+	font-family:inherit;
+	
+	
+	
+}
+#display input:focus{
+	outline:none;
+	border:none;
+	
+}
+#panel{
+	margin-top:20px;
+	padding:10px;
+	display:flex;
+	border-radius:10px;
+	flex-wrap:wrap;
+	flex-direction:row;
+	background-color:rgb(175,175,175);
+}
+.panel-btn{
+	border:none;
+	margin:5px;
+	flex-shrink:0;
+	background-color:white;
+	color:black;
+	font-size:1.5em;
+	padding:5px;
+	border-radius:5px;
+	width:20%;
+	height:40px;
+	
+}
+.panel-btn:hover{
+	background-color:gray;
+	
 }
